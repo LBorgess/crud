@@ -6,7 +6,8 @@ include_once 'includes/header.php';
 <div class="row">
 	<div class="col s12 m6 push-m3">
 
-		<h3 class="light">Novo cliente</h3>
+		<h3 class="light center"><b>Novo cliente</b></h3>
+		<hr>
 
 		<form action="php_action/criar_clientes.php" method="POST">
 
@@ -26,13 +27,17 @@ include_once 'includes/header.php';
 			</div>
 
 			<div class="input-field col s12">
-				<input type="text" name="idade" id="idade">
+				<input type="number" name="idade" id="idade">
 				<label for="idade">Idade</label>
 			</div>
 
-			<button type="submit" name="btn-cadastrar" class="btn">Cadastrar</button>
+			<div class="container center">
 
-			<a href="index.php" class="btn green">Lista de clientes</a>
+				<button type="submit" name="btn-cadastrar" class="btn blue accent-2">Cadastrar</button>
+
+				<a href="index.php" class="btn green">Lista de clientes</a>
+
+			</div>
 
 		</form>
 
