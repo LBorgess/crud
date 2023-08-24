@@ -10,17 +10,16 @@ include_once 'includes/mensagem.php';
 
 <div class="row">
 	<div class="col s12 m6 push-m3">
-		<h3 class="light">Clientes</h3>
-		<table class="striped">
+		<h3 class="light center"> <b>Clientes</b></h3>
+		<hr>
+		<table class="highlight">
 			<thead>
-				<tr >
+				<tr>
 					<th>Nome</th>
 					<th>Sobrenome</th>
 					<th>E-mail</th>
 					<th>Idade</th>
 				</tr>
-				</>
-
 			<tbody>
 				<?php
 
@@ -39,9 +38,9 @@ include_once 'includes/mensagem.php';
 						<td><?php echo $dados['emailCli']; ?></td>
 						<td><?php echo $dados['idadeCli']; ?></td>
 
-						<td><a href="alterar.php?id=<?php echo $dados['codCli']; ?>" class="btn-floating orange"><i class="material-icons">edit</i></a></td>
+						<td><a href="alterar.php?id=<?php echo $dados['codCli']; ?>" class="btn orange"><i class="material-icons">edit</i></a></td>
 
-						<td><a href="#modal<?php echo $dados['codCli']; ?>" class="btn-floating red modal-trigger"><i class="material-icons">delete</i></a></td>
+						<td><a href="#modal<?php echo $dados['codCli']; ?>" class="btn red modal-trigger"><i class="material-icons">person_remove</i></a></td>
 
 						<!-- Modal Structure in Materializecss -->
 						<div id="modal<?php echo $dados['codCli']; ?>" class="modal">
@@ -57,7 +56,7 @@ include_once 'includes/mensagem.php';
 
 									<button type="submit" name="btn-excluir" class="btn red">Excluir</button>
 
-									<a href="#!" class="modal-close waves-effect waves-green btn">Cancelar</a>
+									<a href="#!" class="modal-close waves-effect waves-green btn blue darken-3">Cancelar</a>
 
 								</form>
 							</div>
@@ -73,7 +72,7 @@ include_once 'includes/mensagem.php';
 
 		</table>
 		<br>
-		<a href="cadastrar.php" class="btn">Adicionar Cliente</a>
+		<a href="cadastrar.php" class="btn blue green darken-4">Adicionar Cliente</a>
 	</div>
 </div>
 
