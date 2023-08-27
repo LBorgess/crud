@@ -7,12 +7,11 @@ require_once 'conexao_bd.php';
 if (isset($_POST['btn-alterar'])) {
 
 	$nome = mysqli_escape_string($connection, $_POST['nome']);
-	$sobrenome = mysqli_escape_string($connection, $_POST['sobrenome']);
 	$email = mysqli_escape_string($connection, $_POST['email']);
 	$idade = mysqli_escape_string($connection, $_POST['idade']);
-	$codCli = mysqli_escape_string($connection, $_POST['codCli']);
+	$id = mysqli_escape_string($connection, $_POST['id']);
 
-	$sql = "UPDATE tbClientes SET nomeCli = '$nome', sobreNomeCli = '$sobrenome', emailCli = '$email', idadeCli = '$idade' WHERE codCli = '$codCli'";
+	$sql = "UPDATE alunos SET nome = '$nome', email = '$email', idade = '$idade' WHERE id = '$id'";
 
 	if (mysqli_query($connection, $sql)) {
 

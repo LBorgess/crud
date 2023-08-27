@@ -6,9 +6,9 @@ require_once 'conexao_bd.php';
 
 if (isset($_POST['btn-excluir'])) {
 
-	$codCli = mysqli_escape_string($connection, $_POST['codCli']);
+	$id = mysqli_escape_string($connection, $_POST['id']);
 
-	$sql = "DELETE FROM tbClientes WHERE codCli = '$codCli'";
+	$sql = "DELETE FROM alunos WHERE id = '$id'";
 
 	if (mysqli_query($connection, $sql)) {
 
