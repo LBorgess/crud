@@ -15,8 +15,7 @@ include_once 'includes/mensagem.php';
 		<table class="highlight">
 			<thead>
 				<tr>
-					<th>Nome</th>
-					<th>Sobrenome</th>
+					<th>Nome</th>					
 					<th>E-mail</th>
 					<th>Idade</th>
 				</tr>
@@ -40,13 +39,13 @@ include_once 'includes/mensagem.php';
 						<td><?php echo $dados['idade']; ?></td>
 
 						<td>
-							<a href="alterar.php?id=<?php echo $dados['id']; ?>" class="btn-floating orange">
+							<a href="alterar.php?id=<?php echo $dados['id']; ?>" class="btn orange">
 								<i class="material-icons">edit</i>
 							</a>
 						</td>
 
 						<td>
-							<a href="#modal<?php echo $dados['id']; ?>" class="btn-floating red modal-trigger">
+							<a href="#modal<?php echo $dados['id']; ?>" class="btn red modal-trigger">
 								<i class="material-icons">delete</i>
 							</a>
 						</td>
