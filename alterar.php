@@ -44,7 +44,7 @@ if (isset($_GET['id'])) {
 
 			<a href="index.php" class="btn green">
 				<i class="material-icons right">list</i>
-				Lista de clientes
+				Lista de alunos
 			</a>
 
 		</form>
